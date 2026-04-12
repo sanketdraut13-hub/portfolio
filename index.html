@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My portfolio</title>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin: 0;
+                margin-bottom: 50px;
+                background-color: aliceblue;
+    
+
+            }
+            .navigation{
+                background-image: url("indexpage-background2.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 50px;
+                flex-wrap: wrap;
+            }
+            a{
+                margin: 25px;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                margin: 50px;
+                background-color: rgba(65, 65, 65, 0.534);
+                border-radius: 15px;
+                padding: 20px;
+            
+            }
+            nav{
+                float: right;
+            }
+            a:hover{
+                background-color: rgba(65, 65, 65, 0.1);
+                border-radius: 15px;
+                padding: 25px;
+
+            
+
+            }
+            #main{
+                display: flex;
+                min-height: 100vh;
+                flex-wrap: wrap;
+                
+
+            }
+            .indexleft{
+                background-color: aliceblue;
+                flex: 1
+               
+            }
+            .indexright{
+                background-image: url("indexpage-background2.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                flex: 1;
+                align-content: center;
+                min-height: 100vh;
+            }
+            h1{
+                font-size: 180px;
+                font-family: fantasy;
+                margin-bottom: 150px;
+            }
+            p{
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            button{
+                margin-right: 60px;
+            }
+            #right{
+                color: aliceblue;
+                padding: 50px;
+                text-align: left;
+                word-spacing: 4px;
+                font-size: 50px;
+            }
+            button{
+                color: aliceblue;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding: 20px;
+                background-color: rgb(0, 0, 0);
+                border: 2px solid black;
+                border-radius: 10px;
+                box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.507);
+            }
+            button:hover{
+                background-color: rgba(0, 0, 0, 0.507);
+                box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.353);
+                padding: 22px;
+
+
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <div class="navigation"><nav>
+            <a href="index.html">Home</a>
+            <a href="Achievments.html">Achievements</a>
+            <a href="Projects.html" class="a1">Projects</a>
+            <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+       <div id="main"><div class="indexleft">
+         <h1 title="For more information do visit My Profile">
+                PORT<br>
+                FOLIO
+            </h1>
+          <center> <p>
+
+              Aspiring professional committed to continuous learning, innovation, and skill development.
+
+          </p>
+          <button onclick="document.location='Main_page.html'">View Profile</button></center>
+
+        </div>
+        <div class="indexright">
+           <center> <p id="right">
+                Step into my world of learning, innovation, and development — discover my profile, skills, and aspirations in the field of software engineering.
+
+
+            </p></center></div>
+            
+       
+    </body>
+</html>
