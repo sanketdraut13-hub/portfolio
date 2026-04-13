@@ -14,28 +14,34 @@
     
 
             }
-            .navigation{
-                background-image: url("indexpage-background2.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                padding: 50px;
+            .navigation {
+                position: absolute;
+                width: 100%;
+                top: 0;
                 display: flex;
-               justify-content: flex-end;
-                flex-wrap: wrap;
-            }
-            a{
-                margin: 25px;
-                color: rgb(255, 255, 255);
-                font-size: 20px;
-                font-family: 'Times New Roman', Times, serif;
-                margin: 50px;
-                background-color: rgba(65, 65, 65, 0.534);
-                border-radius: 15px;
+                justify-content: center;
                 padding: 20px;
-            
+                background-color: black;
+                z-index: 10;
             }
-            nav{
-                float: right;
+
+            nav {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               gap: 10px;
+               max-width: 90%;
+            }
+
+           nav a {
+               color: aliceblue;
+               text-decoration: none;
+               font-size: 16px;
+               padding: 10px 14px;
+               background-color: #1a1a1a;
+               border-radius: 8px;
+               white-space: nowrap;
+            
             }
             a:hover{
                 background-color: rgba(65, 65, 65, 0.1);
