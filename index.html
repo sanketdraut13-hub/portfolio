@@ -1,144 +1,192 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-        <title>My portfolio</title>
-        <style>
-            html{
-                scroll-behavior: smooth;
-            }
-            body{
-                margin: 0;
-                margin-bottom: 50px;
-                background-color: aliceblue;
-    
+    <html lang="en">
+         <head>
 
-            }
-            .navigation {
-                position: absolute;
-                width: 100%;
-                top: 0;
-                display: flex;
-                justify-content: center;
-                padding: 20px;
-                background-color: black;
-                z-index: 10;
-            }
+            <title>My Portfolio</title>
 
-            nav {
-               display: flex;
-               flex-wrap: wrap;
-               justify-content: center;
-               gap: 10px;
-               max-width: 90%;
-            }
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                  }
 
-           nav a {
-               color: aliceblue;
-               text-decoration: none;
-               font-size: 16px;
-               padding: 10px 14px;
-               background-color: #1a1a1a;
-               border-radius: 8px;
-               white-space: nowrap;
-            
-            }
-            a:hover{
-                background-color: rgba(65, 65, 65, 0.1);
-                border-radius: 15px;
-                padding: 25px;
-
-            
-
-            }
-            #main{
-                display: flex;
-                min-height: 100vh;
-                flex-wrap: wrap;
-                
-
-            }
-            .indexleft{
-                background-color: aliceblue;
-                flex: 1
-               
-            }
-            .indexright{
-                background-image: url("indexpage-background2.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                flex: 1;
-                align-content: center;
-                min-height: 100vh;
-            }
-            h1{
-                font-size: 180px;
-                font-family: fantasy;
-                margin-bottom: 150px;
-            }
-            p{
-                font-size: 25px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-            button{
-                margin-right: 60px;
-            }
-            #right{
-                color: aliceblue;
-                padding: 50px;
-                text-align: left;
-                word-spacing: 4px;
-                font-size: 50px;
-            }
-            button{
-                color: aliceblue;
-                padding-left: 50px;
-                padding-right: 50px;
-                padding: 20px;
-                background-color: rgb(0, 0, 0);
-                border: 2px solid black;
-                border-radius: 10px;
-                box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.507);
-            }
-            button:hover{
-                background-color: rgba(0, 0, 0, 0.507);
-                box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.353);
-                padding: 22px;
+                body {
+                    font-family: Arial, sans-serif;
+                    overflow-x: hidden;
+                    }
 
 
-            }
-            
-        </style>
+                body::before {
+                    content: "";
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    width: 50%;
+                    height: 100%;
+                    background: url("indexpage-background2.jpg") center/cover no-repeat;
+                    z-index: -1;
+                }
 
-    </head>
-    <body>
-        <div class="navigation"><nav>
-            <a href="index.html">Home</a>
-            <a href="Achievments.html">Achievements</a>
+
+                .navigation {
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                    z-index: 10;
+                    background-color: black;
+                }
+
+                nav {
+                    display: flex;
+                    gap: 20px;
+                }
+
+                nav a {
+                    color: aliceblue;
+                    text-decoration: none;
+                    font-size: 18px;
+                    padding: 12px 18px;
+                    background-color: #1a1a1a;
+                    border-radius: 10px;
+                    transition: 0.3s;
+                }
+
+                nav a:hover {
+                    background-color: #333;
+                    }
+
+
+                nav a:hover {
+                    background: rgba(255,255,255,0.3);
+                    background-color: rgba(65, 65, 65, 0.1);
+                    border-radius: 15px;
+                    padding: 25px;
+                }
+
+
+                #main {
+                    display: flex;
+                    min-height: 100vh;
+                    padding-top: 40px;
+                    }
+
+                .indexleft {
+                    width: 50%;
+                    background: aliceblue;
+                    padding: 120px 40px 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    }
+
+
+                h1 {
+                   font-size: 180px;
+                   font-family: fantasy;
+                   line-height: 0.9;
+                   }
+
+
+                .bottom {
+                   text-align: center;
+                }
+
+                .bottom p {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }   
+
+                 button {
+                    padding: 12px 25px;
+                    background: black;
+                    color: white;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background: #333;
+                }
+
+
+                .indexright {
+                     width: 50%;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     padding: 40px;
+                 }
+
+                .indexright p {
+                     color: white;
+                     font-size: 32px;
+                     font-weight: bold;
+                     max-width: 600px;
+                }
+
+
+             @media (max-width: 768px) {
+                body::before {
+                    width: 100%;
+                    }
+
+                #main {
+                    flex-direction: column;
+                      }
+
+                .indexleft, .indexright {
+                    width: 100%;
+                     }
+
+                h1 {
+                   font-size: 80px;
+                   text-align: center;
+                   }
+
+                .indexright p {
+                    font-size: 20px;
+                    text-align: center;
+                   }
+                }
+            </style>
+        </head>
+
+            <body>
+
+      <div class="navigation">
+         <nav>
+             <a href="index.html" class="a1">Home</a>
+            <a href="Achievments.html" class="a1">Achievements</a>
             <a href="Projects.html" class="a1">Projects</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="a1">Contact</a>
             </nav>
+       </div>
+
+       <div id="main">
+
+    <div class="indexleft">
+        <h1>PORT<br>FOLIO</h1>
+
+        <div class="bottom">
+            <p>
+                Aspiring professional committed to continuous learning, innovation, and skill development.
+            </p>
+            <button onclick="location.href='Main_page.html'">View Profile</button>
         </div>
-       <div id="main"><div class="indexleft">
-         <h1 title="For more information do visit My Profile">
-                PORT<br>
-                FOLIO
-            </h1>
-          <center> <p>
+    </div>
 
-              Aspiring professional committed to continuous learning, innovation, and skill development.
+    <div class="indexright">
+        <p>
+            Step into my world of learning, innovation, and development — discover my profile, skills, and aspirations in the field of software engineering.
+        </p>
+    </div>
 
-          </p>
-          <button onclick="document.location='Main_page.html'">View Profile</button></center>
+</div>
 
-        </div>
-        <div class="indexright">
-           <center> <p id="right">
-                Step into my world of learning, innovation, and development — discover my profile, skills, and aspirations in the field of software engineering.
-
-
-            </p></center></div>
-            
-       
-    </body>
+            </body>
 </html>
