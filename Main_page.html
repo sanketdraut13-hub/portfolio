@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-       
         <title>My Portfolio</title>
         <style>
             body{
                 background-color: aliceblue;
                 margin: 0;
             }
-            .navigation{
-                background-image: url("indexpage-background2.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                padding: 50px;
-                flex-wrap: wrap;
-            }
-            .a1{
-                margin: 25px;
-                color: rgb(255, 255, 255);
-                font-size: 20px;
-                font-family: 'Times New Roman', Times, serif;
-                margin: 50px;
-                background-color: rgba(65, 65, 65, 0.534);
-                border-radius: 15px;
+            .navigation {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                display: flex;
+                justify-content: center;
                 padding: 20px;
-            }
-            nav{
-                float: right;
-            }
-            .a1:hover{
+                z-index: 10;
+                background-color: black;
+                }
+
+            nav {
+               display: flex;
+               gap: 20px;
+                }
+
+                nav a {
+                color: aliceblue;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 12px 18px;
+                background-color: #1a1a1a;
+                border-radius: 10px;
+                transition: all 0.3s ease-in-out;
+              }
+
+            nav a:hover {
+                background-color: #333;
+              }
+
+
+            nav a:hover {
+                background: rgba(255,255,255,0.3);
+              }
+                .a1:hover{
                 background-color: rgba(65, 65, 65, 0.1);
                 border-radius: 15px;
                 padding: 25px;
-            }
+              }
+
+            
             .b{
                 display: flex;
                 margin-bottom: 40px;
+                padding-top: 150px;
             }
             .c{
                 flex: 1;
