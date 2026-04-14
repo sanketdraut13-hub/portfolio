@@ -1,146 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            contact
-        </title>
-        <style>
-            body{
-                background-color: aliceblue;
-                margin: 0;
-            }
-            .navigation {
-                position: absolute;
-                width: 100%;
-                top: 0;
-                display: flex;
-                justify-content: center;
-                padding: 20px;
-                z-index: 10;
-                background-color: black;
-                }
+<head>
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
 
-            nav {
-               display: flex;
-               gap: 20px;
-                }
+        .navigation {
+            width: 100%;
+            background-color: black;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
 
-                nav a {
-                color: aliceblue;
-                text-decoration: none;
-                font-size: 18px;
-                padding: 12px 18px;
-                background-color: #1a1a1a;
-                border-radius: 10px;
-                transition: all 0.3s ease-in-out;
-              }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
 
-            nav a:hover {
-                background-color: #333;
-              }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        
+        .container {
+            width: 500px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        
+        .row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .row input {
+            width: 100%;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        
+        button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            border: none;
+            background-color: #2ea3c7;
+            color: white;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #1c7c9a;
+        }
+
+    </style>
+</head>
+
+<body>
 
 
-            nav a:hover {
-                background: rgba(255,255,255,0.3);
-              
+    <div class="navigation">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Achievments.html">Achievements</a>
+            <a href="Projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 
-            }
-            .a1:hover{
-                background-color: rgba(65, 65, 65, 0.1);
-                border-radius: 15px;
-                padding: 25px;
-            }
-            
-            .aboutme{
-                display: flex;
-                padding-right: 50px;
-                padding-left: 50px;
-                box-shadow: 5px 12px 20px rgba(0, 0, 0, 0.516);
-                border-radius: 50px;
-                background-image: url("indexpage-background2.jpg");
-                height: 120px;
-                width: 300px;
-                
-                
-            }
-            .a2{
-                flex: 1;
-                align-content: center;
-                margin: 0px;
 
-            }
-             .image{
-                object-fit: cover;
-                padding: 0px;
-                margin-left: 0%;
-                margin-right: 0%;
-                text-align: center;
-                
-            }
-            .image:hover{
-                height:60px ;
-                width: 60px;
-            }
-            .sec1{
-                padding: 100px;
-                box-shadow: 5px 12px 20px rgba(65, 65, 65, 0.516);
-            }
-            h1{
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            }
-            .div2{
-                padding: 10px;
-                align-content: center;
-                
-            }
-            #label1{
-                padding: 50px;
-                margin-top: 50px;
-                border-radius: 20px;
-                box-shadow: 5px 12px 17px rgba(65, 65, 65, 0.507);
-                
-            }
-            button{
-                background-color: black;
-                color: aliceblue;
-                border-radius: 20px;
-            }
-            button:hover{
-                background-color: dimgray;
-                border: 0px;
-                font-size: large;
-            }
-        </style><body>
-             <div class="navigation"><nav>
-            <a href="index.html" class="a1">Home</a>
-            <a href="Achievments.html" class="a1">Achievements</a>
-            <a href="Projects.html" class="a1">Projects</a>
-            <a href="contact.html" class="a1">Contact</a>
-            </nav>
-        </div>
-              <div id="label1">
-              <form> <center> 
-                <h2>Contact</h2>
-                <div class="div2"><label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your Name" >
-                <label for="no">Phone: </label>
-                <input type="number" id="no" name="phone" placeholder="Enter your contact no."></div>
-                <div class="div2"><label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your Email"></div>
-                <div class="div2"><label for="Message">Your Message: </label>
-                <textarea id="Message" name="Message" placeholder="Enter your Message"></textarea></div>
-                <button type="submit">Send</button></center></form></div>
+    <div class="container">
+        <form>
+            <h2>Contact Form</h2>
 
-        <section class="sec1"><center><h1>Contact</h1>
-           <div class="aboutme">
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="a2"><img src="gmail-icon-38478.png" alt="image" width="40px"height="40px" class="image" ></a>
-                <a href="https://wa.me/919284152741" class="a2"><img src="whatsapp_png.png" alt="image" width="40px"height="40px" class="image"></a>
-                <a href="https://www.instagram.com/sanket_raut3?igsh=MWZ2aDl4NjV6bmhrNA==" class="a2"><img src="instagram_png.png" alt="image" width="40px"height="40px" class="image"></a>
-                <a href="tel: 9284152741" class="a2"><img src="phone_png.png" alt="image" width="40px"height="40px" class="image"></a>
-                
+            <div class="row">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+            </div>
 
-            </div></center>
-        </section>
-        </body>
-    </head>
+            <input type="text" placeholder="Subject">
+
+            <br><br>
+
+            <textarea placeholder="Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+            <p style="font-size: 20px; background-color: black;color: aliceblue; text-align: center; padding: 50px; margin: 0px;">
+                © Copyright Sanket's Portfolio | Designed by Sanket
+            </p>
+        </footer>
+
+</body>
 </html>
